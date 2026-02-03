@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>jogo_math</title>
+    <style>
+        /* Reset CSS: Please avoid making changes here unless you know what you're doing :) */
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            line-height: 1;
+            font-family: Arial, sans-serif;
+            background-color: #040218;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        @font-face {
+            font-family: 'HeyAugust';
+            src: url('assets/HeyAugust.ttf') format('truetype');
+            font-display: swap;
+            /* Ajuda o navegador a carregar mais rápido */
+        }
+
+        /* Cria um elemento invisível que força o carregamento imediato */
+        .font-loader {
+            font-family: 'HeyAugust';
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @font-face {
+            font-family: 'SevenSegment';
+            src: url('assets/SevenSegment.ttf') format('truetype');
+            font-display: swap;
+            /* Ajuda o navegador a carregar mais rápido */
+        }
+
+        /* Cria um elemento invisível que força o carregamento imediato */
+        .font-loader {
+            font-family: 'SevenSegment';
+            position: absolute;
+            opacity: 0;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="font-loader">Preload Hey August</div>
+    <div class="font-loader">Preload Seven Segment</div>
+    <div id="game-container"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <!--script>
+  WebFont.load({
+    custom: {
+      families: ['HeyAugust'],
+      urls: ['assets/HeyAugust.ttf'] // Se você criou um arquivo CSS, ou coloque o estilo direto
+    },
+    WebFont.load({
+    custom: {
+      families: ['SevenSegment'],
+      urls: ['assets/SevenSegment.ttf'] // Se você criou um arquivo CSS, ou coloque o estilo direto
+    },
+    active: function() {
+      /*console.log("Fonte carregada e ativa!");*/
+    }
+  });
+</script-->
+    <script src="./phaser.js"></script>
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
