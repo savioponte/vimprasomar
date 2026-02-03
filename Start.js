@@ -189,7 +189,7 @@ export class Start extends Phaser.Scene {
         this.logo = this.add.image(CX, 220, 'logo');
         this.logo.setScale(Math.min((600 - 40) / this.logo.width, 1));
 
-        this.textoInstrucoes = this.add.text(CX, 500, "INSTRUÇÕES\n\nResolva rápido!\nErros tiram corações.", {
+        this.textoInstrucoes = this.add.text(CX, 500, "INSTRUÇÕES\n\nResolva rápido as somas,\n\nantes do relógio zerar!\n\nCuidado para não errar.", {
             fontFamily: 'Arial', fontSize: "26px", fill: "#FFF", align: 'center'
         }).setOrigin(0.5);
 
